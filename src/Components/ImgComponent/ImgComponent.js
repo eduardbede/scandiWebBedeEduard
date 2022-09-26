@@ -28,7 +28,6 @@ class ImgComponent extends Component {
 
     
   render(){
-    console.log(this.state.img)
     return(
            <div className="right--imgDiv unselectable">
                 <img className="right--imgImg" src={this.props.src?.[this.state.img]} alt={this.props.src[this.state.img]}></img>
