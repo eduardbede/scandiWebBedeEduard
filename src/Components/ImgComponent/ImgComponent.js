@@ -32,9 +32,9 @@ class ImgComponent extends Component {
     return(
            <div className="right--imgDiv unselectable">
                 <img className="right--imgImg" src={this.props.src?.[this.state.img]} alt={this.props.src[this.state.img]}></img>
-               {this.props.src?.gallery?.length !== 1 && <div className="left-CarouselButton" data-name="left" onClick={(e)=>this.nextImgLeft(e)}>
+               {this.props.src?.length !== 1 && <div className="left-CarouselButton" data-name="left" onClick={(e)=>this.nextImgLeft(e)}>
                 <img className="left-CarouselImg" src={RightButton} alt={LeftButton}></img></div>} 
-               {this.props.src?.gallery?.length !== 1 && <div className="right-CarouselButton" data-name='right' onClick={(e)=>this.nextImgRight(e)} >
+               {this.props.src?.length !== 1 && <div className="right-CarouselButton" data-name='right' onClick={(e)=>this.nextImgRight(e)} >
                 <img className="right-CarouselImg" src={LeftButton} alt={RightButton}></img></div>}
            </div> 
     )
